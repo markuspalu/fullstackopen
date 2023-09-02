@@ -14,16 +14,6 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
 
   const addName = (event) => {
-    // if (!persons.includes(foundPerson) || !persons.includes(foundNumber)) {
-      //   const nameObject = {
-    //     name: newName,
-    //     number: newNumber,
-    //   }
-    //   setPersons(persons.concat(nameObject))
-    // } else {
-      //   alert(`${newName} is already added to the phonebook`)
-      // }
-      // setNewName("")
     event.preventDefault()
     const foundPerson = persons.find(person => person.name === newName)
     const foundNumber = persons.find(person => person.number === newNumber)
